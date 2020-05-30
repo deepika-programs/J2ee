@@ -20,6 +20,19 @@ public class FormData extends HttpServlet {
 	 * 
 	 */
 	
+	/*
+	 * There are other http method like Post, Get. Those are:
+	 * 
+	 * METHOD_DELETE = "DELETE";
+	 * METHOD_HEAD = "HEAD";
+	 * METHOD_GET = "GET";
+	 * METHOD_OPTIONS = "OPTIONS";
+	 * METHOD_POST = "POST";
+	 * METHOD_PUT = "PUT";
+	 * METHOD_TRACE = "TRACE";
+	 * 
+	 */
+	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		

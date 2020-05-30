@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+
+	<display-name>Ex007_ServletConfig</display-name>
+
+	<servlet>
+		<servlet-name>welcome</servlet-name>
+		<servlet-class>com.deepika.Welcome</servlet-class>
+		<init-param>
+			<param-name>dbusername</param-name>
+			<param-value>root</param-value>
+		</init-param>
+		<init-param>
+			<param-name>dbpassword</param-name>
+			<param-value>secretpass</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>welcome</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ConfigFile</servlet-name>
+		<servlet-class>com.deepika.ReadConfigFromFile</servlet-class>
+		<init-param>
+			<param-name>conf</param-name>
+			<param-value>configuration.properties</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ConfigFile</servlet-name>
+		<url-pattern>/configfile</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
