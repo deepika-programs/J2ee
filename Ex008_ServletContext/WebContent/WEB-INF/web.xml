@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	
+	<display-name>Ex008_ServletContext</display-name>
+
+	<servlet>
+		<servlet-name>welcome</servlet-name>
+		<servlet-class>com.deepika.Welcome</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>welcome</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>page2</servlet-name>
+		<servlet-class>com.deepika.PageTwo</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>page2</servlet-name>
+		<url-pattern>/page2</url-pattern>
+	</servlet-mapping>
+	
+	
+	<context-param>
+		<param-name>testparam</param-name>
+		<param-value>any  value</param-value>
+	</context-param>
+	<context-param>
+		<param-name>testparam1</param-name>
+		<param-value>any config value 1</param-value>
+	</context-param>
+	<context-param>
+		<param-name>testparam2</param-name>
+		<param-value>any config value 2</param-value>
+	</context-param>
+	<context-param>
+		<param-name>testparam3</param-name>
+		<param-value>any config value 3</param-value>
+	</context-param>
+
+</web-app>

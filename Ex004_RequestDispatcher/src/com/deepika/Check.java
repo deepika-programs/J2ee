@@ -19,7 +19,7 @@ public class Check extends HttpServlet {
 		 * RequestDispatcher - Dispatches the request to another servlet
 		 * RequestDispatcher has 2 methods:
 		 * 	1. include - will append the response of the corresponding servlet in the same place/line
-		 *  2. forward - will forward the request&response completely to the another servletr
+		 *  2. forward - will forward the request&response completely to the another servlet
 		 * 
 		 */
 		
