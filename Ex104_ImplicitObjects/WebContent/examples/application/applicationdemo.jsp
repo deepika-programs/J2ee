@@ -8,7 +8,7 @@
 	<body>
 	
 		<h4>
-			Below value displyed from context-param of application/web.xml using "application" which is implicit object.
+			Below value displayed from context-param of application/web.xml using "application" which is implicit object.
 			This is same as servletContext in servlet example. 
 		</h4>
 		<%= application.getInitParameter("dbname") %>

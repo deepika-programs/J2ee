@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Form Page</title>
+		<script>
+			/*
+			function samp() {
+				window.alert('Value: '+ document.getElementById("abc").value);
+				window.alert('Name: '+ document.getElementById("abc").name);
+				window.alert('Type: '+ document.getElementById("abc").type);
+			}
+			*/
+			function validate() {
+				if(document.getElementById("abc").value=="") {
+					//alert('Value should not be empty!');
+					var inp = prompt("Enter the value");
+					document.getElementById("abc").value=inp;
+				} else {
+					var conf = confirm("Already value exists. Are you sure? Do you want to change the value?");
+					if(conf) {
+						var inp = prompt("Enter the value");
+						document.getElementById("abc").value=inp;
+					} else {
+						alert("You have cancelled the operation. So, I'm not changing the value.");
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		
+		<form>
+			Name : <input type="text" id="abc" name="fieldname">
+			<br>
+			<input type="button" value="Click me!" onclick="validate()">
+		</form>
+		
+	</body>
+</html>

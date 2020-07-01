@@ -7,8 +7,8 @@
 	</head>
 	<body>
 	
-		<h4>Below value displyed from init-param of servlet using "config" which is implicit object </h4>
+		<h4>Below value displayed from init-param of servlet using "config" which is implicit object </h4>
 		<%= config.getInitParameter("test") %>
-	
+	 
 	</body>
 </html>
