@@ -1,7 +1,7 @@
 # Jsp, Servlet with MySQL
 
 
-This is the example which has jsp, servlet, mysql db along with server side validation and client side validation using javascript.
+This is the example which has `jsp`, `servlet`, `mysql` db along with *server side validation* and *client side validation* using `javascript`.
 
 As a first step of this project, create a project as a **dynamic web project** in eclipse IDE.
 
