@@ -9,6 +9,8 @@ As a first step of this project, create a project as a **dynamic web project** i
 
 Then, create `index.jsp` under the `WebContent`.
 
+![Step 2](steps/step02.jpg)
+
 ```jsp
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
