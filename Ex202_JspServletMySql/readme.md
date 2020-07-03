@@ -1,5 +1,9 @@
 # Jsp, Servlet with MySQL
 
+##### Architecture
+
+![architecture](steps/flow.jpg) 
+
 
 This is the example which has `jsp`, `servlet`, `mysql` db along with *server side validation* and *client side validation* using `javascript`.
 
